@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from app.factories.users_factory_protocol import IUsersFactory
 from app.repositories.protocols.i_user_repository import IUsersRepository
 from typing import Protocol
 from app.models.user_model import UserModel

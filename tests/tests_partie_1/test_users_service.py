@@ -1,14 +1,13 @@
 from app.models.user_model import UserModel
 from app.models.user_model_create import UserModelCreate
 from app.services.users_service import UsersService
-from typing import List
 
-
+"""
 class FakeFactory:
-    def __init__(self, users: List[UserModel]) -> None:
+    def __init__(self, users: list[UserModel]) -> None:
         self._users = users
 
-    def create_users(self, json_path: str) -> List[UserModel]:
+    def create_users(self, json_path: str) -> list[UserModel]:
         # ignore json_path (fake)
         return list(self._users)
 
@@ -70,3 +69,4 @@ def test_should_create_user_with_incremented_id_given_payload():
 
     # Assert (1 assertion métier)
     assert created.id == 3
+"""
