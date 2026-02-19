@@ -6,3 +6,10 @@ from sqlalchemy.orm import Session, sessionmaker
 
 from app.db.engine import get_engine
 
+def get_db() -> Generator[Session,None,None] :
+    Session = sessionmaker(bind=get_engine)
+    db = Session()
+    try :
+        yield db
+    finally :
+        db.close()

@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     app_profile:str = "fake"
 
     # URL de la base de données
-    database_url: str = "sqlite+pysqlite:///../data/app.db"
+    database_url: str = "sqlite+pysqlite:///./data/app.db"
 
     # Chemin vers le fichier JSON contenant les utilisateurs
     users_json_path: str = "data/users.json"
