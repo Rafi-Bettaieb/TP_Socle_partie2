@@ -61,5 +61,4 @@ def get_users_service(
     
     repo = build_users_repository(settings, db=db)
     
-    # On retourne l'instance du service
     return UsersService(repo)
